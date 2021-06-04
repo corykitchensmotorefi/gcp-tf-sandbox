@@ -18,7 +18,7 @@ steps:
 
   validate:
     title: Validating the Terraspace codebase
-    type: build
+    type: freestyle
     stage: base
     working_directory: '${{clone}}/src'
     registry: ${{MR_REGISTRY_CF_NAME}}
