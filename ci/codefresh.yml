@@ -21,8 +21,7 @@ steps:
     type: freestyle
     stage: base
     working_directory: '${{clone}}/src'
-    registry: ${{MR_REGISTRY_CF_NAME}}
-    image_name: iac-runner-base
+    image: '${{MR_REGISTRY_PATH}}/iac-runner-base:latest'
     tag: '${{CF_REVISION}}'
     commands:
       - 'echo hello'
