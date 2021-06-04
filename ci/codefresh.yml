@@ -25,4 +25,5 @@ steps:
     tag: '${{CF_REVISION}}'
     commands:
       - 'echo hello'
+      - 'bundle install'
       - 'terraspace validate'
