@@ -25,6 +25,8 @@ steps:
     tag: '${{CF_REVISION}}'
     commands:
       - 'echo hello'
+      # TODO
+      # Extract out the Gemfile to the iac runner Docker image
       - 'bundle update --bundler'
       - 'bundle install'
-      - 'terraspace validate'
+      - 'terraspace all validate'
